@@ -24,9 +24,13 @@ If you encounter problems with 3D sound, you can try deleting the `3DSoundProvid
 
 # But I have the Vive, not the Rift!
 
-Since Release 2, the R.E.A.L. mod should be working fine with your HTC Vive thanks to an embedded copy of [Revive](https://github.com/LibreVR/Revive). The game automatically detects whether you're using the Rift or the Vive, and if a Rift is not present, it loads SteamVR and it should display correctly on your Vive. Do not try to patch or inject the executable with Revive manually: it is unnecessary and it might even lead to conflicts. In fact, you don't even need to have Revive installed, as the required dll's are already supplied with the mod.
+Since Release 2, the R.E.A.L. mod should be working fine with your HTC Vive thanks to the magic of [Revive](https://github.com/LibreVR/Revive). The game automatically detects whether you're using the Rift or the Vive, and if a Rift is not present, it loads an embedded copy of Revive (updated to [Version 1.2.1](https://github.com/LibreVR/Revive/releases/tag/1.2.1)). Revive in turn connects with SteamVR, and hopefully all this should make the game display correctly on your Vive. 
 
-If the game somehow fails to detect your Vive, you can try forcing its hand by adding the line `+VRRevive 1` to the end of your `VRlaunchcmds.txt` file. If instead you want to use your Rift but the game insists on launching SteamVR, specify `+VRRevive 0` to disable the internal copy of Revive. The default value if you don't pass anything is `+VRRevive -1` which will enable the auto-detection code.
+If the mod somehow fails to detect your Vive, you can try forcing its hand by adding the line `+VRRevive 1` at the end of your `VRlaunchcmds.txt` file. If instead you want to use your Rift but the game insists on launching SteamVR, specify `+VRRevive 0` to disable the internal copy of Revive. The default value if you don't pass anything is `+VRRevive -1` which will enable the auto-detection code.
+
+In case you have a more recent version of Revive that you want to use with the mod, you can just drop your up-to-date copy of `LibRevive32_1.dll` into the `NOLF2Revive` folder, overwriting the one which was put there during installation.
+
+If everything fails and you have Revive installed on your system, it might be worth a try to `Inject...` the executable with Revive manually from the system tray menu (at least one user reported success with this method): normally however that should be unnecessary, and it might even lead to conflicts.
 
 WMR headsets will probably not work or have issues, as Windows Mixed Reality is not yet officially supported by Revive.       
 
