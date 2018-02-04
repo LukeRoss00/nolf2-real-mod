@@ -24,7 +24,7 @@ If you encounter problems with 3D sound, you can try deleting the `3DSoundProvid
 
 # But I have the Vive, not the Rift!
 
-Since Release 2, the R.E.A.L. mod should be working fine with your HTC Vive thanks to the magic of [Revive](https://github.com/LibreVR/Revive). The game automatically detects whether you're using the Rift or the Vive, and if a Rift is not present, it loads an embedded copy of Revive (updated to [Version 1.2.1](https://github.com/LibreVR/Revive/releases/tag/1.2.1)). Revive in turn connects with SteamVR, and hopefully all this should make the game display correctly on your Vive. 
+Since Release 2, the R.E.A.L. mod should be working fine with your HTC Vive thanks to the magic of [Revive](https://github.com/LibreVR/Revive). The game automatically detects whether you're using the Rift or the Vive, and if a Rift is not present, it loads an embedded copy of Revive (updated to [Version 1.2.1](https://github.com/LibreVR/Revive/releases/tag/1.2.1)). Revive in turn connects with SteamVR, and hopefully all this should make the game display correctly on your Vive. Remember that Revive needs the [Oculus runtime](https://www.oculus.com/setup/) installed (you can skip the first-time setup part and you won't need an Oculus account).
 
 If the mod somehow fails to detect your Vive, you can try forcing its hand by adding the line `+VRRevive 1` at the end of your `VRlaunchcmds.txt` file. If instead you want to use your Rift but the game insists on launching SteamVR, specify `+VRRevive 0` to disable the internal copy of Revive. The default value if you don't pass anything is `+VRRevive -1` which will enable the auto-detection code.
 
