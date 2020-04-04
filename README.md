@@ -122,7 +122,7 @@ However, if involuntary camera movements or zoom still make you sick, you can di
 
 # What does R.E.A.L. stand for?
 
-That is clearly explained on page 381 of your Spy Training Manual, which I guess you haven't got around to read properly yet. Why, it's Reality Enhancement Augmentation Layer, of course!
+That is clearly explained on page 381 of your Spy Training Manual, which I guess you haven't got around to reading properly yet. Why, it's Reality Enhancement Augmentation Layer, of course!
 
 # TL;DR
 
